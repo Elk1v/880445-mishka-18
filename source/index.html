@@ -37,68 +37,63 @@
 
       <section class="products">
         <h2 class="products__title">Милые штуки ручной работы</h2>
-        <div class="products__interior-objects">
-          <h3 class="interior-objects__heading">Предметы интерьера</h3>
-        </div>
-        <div class="products__toys">
-          <h3 class="toys__title">Детские игрушки</h3>
-        </div>
+        <a class="products__interior">
+          <h3 class="products__heading">Предметы интерьера</h3>
+        </a>
+        <a class="products__toys">
+          <h3 class="products__heading">Детские игрушки</h3>
+        </a>
       </section>
 
       <section class="best-product">
         <h3 class="best-product__title">Вязаные корзинки</h3>
         <b class="best-product__of-week">Товар недели</b>
         <p class="best-product__description"></p>
-        <div class="best-product__table">
-          <div class="table__options">
-            <span class="oprions__item">Цвет</span>
-            <span class="oprions__item">Диаметр</span>
-            <span class="oprions__item">Высота</span>
-          </div>
-          <div class="table__value">
-            <span class="value__item">«Тиффани»/серый</span>
-            <span class="value__item">25 см</span>
-            <span class="value__item">15 см</span>
-          </div>
+        <div class="best-product__table options-table">
+          <span class="options-table__item">Цвет</span>
+          <span class="options-table__item">Диаметр</span>
+          <span class="options-table__item">Высота</span>
         </div>
-        <div class="best-product__card">
-          <img class="card__image" src="" alt="Фотография вязанных корзинок">
-          <p class="card__price">Цена: 990 руб.</p>
+        <div class="best-product__table value-table">
+          <span class="value-table__item">«Тиффани»/серый</span>
+          <span class="value-table__item">25 см</span>
+          <span class="value-table__item">15 см</span>
+        </div>
+        <div class="best-product__card best-card">
+          <img class="best-card__image" src="" alt="Фотография вязанных корзинок">
+          <p class="best-card__price">Цена: 990 руб.</p>
         </div>
 
         <a href="#" class="main-button best-product__button">Заказать</a>
       </section>
 
-      <div class="zigzag"></div>
-
-      <section class="advantages">
+      <section class="advantages-section">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p class="advatnages__about-paragraph">Коротко о нас:</p>
-        <ul class="advantages__list">
-          <li class="list__item list__item--eco">
-            <p class="item__description">Экологически чистые материалы</p>
+        <p class="advantages-section__about">Коротко о нас:</p>
+        <ul class="advantages-section__list advantages-list">
+          <li class="advantages-list__item advantages-list__item--eco">
+            <p class="advantages-list__item-description">Экологически чистые материалы</p>
           </li>
-          <li class="list__item list__item--style">
-            <p class="item__description">Скандинавский стиль по российской цене</p>
+          <li class="advantages-list__item advantages-list__item--style">
+            <p class="advantages-list__item-description">Скандинавский стиль по российской цене</p>
           </li>
-          <li class="list__item list__item--likes">
-            <p class="item__description">Увеличивает лайки на фотографиях</p>
+          <li class="advantages-list__item advantages-list__item--likes">
+            <p class="advantages-list__item-description">Увеличивает лайки на фотографиях</p>
           </li>
-          <li class="list__item list__item--connection">
-            <p class="item__description">Связано вручную с любовью и умилением</p>
+          <li class="advantages-list__item advantages-list__item--connection">
+            <p class="advantages-list__item-description">Связано вручную с любовью и умилением</p>
           </li>
-          <li class="list__item list__item--support">
-            <p class="item__description">Поддержка отечественного производителя</p>
+          <li class="advantages-list__item advantages-list__item--support">
+            <p class="advantages-list__item-description">Поддержка отечественного производителя</p>
           </li>
-          <li class="list__item list__item--gift">
-            <p class="item__description">Поставляется в подарочной упаковке</p>
+          <li class="advantages-list__item advantages-list__item--gift">
+            <p class="advantages-list__item-description">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
       </section>
 
       <article class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-
         <div class="reviews__list slider">
           <blockquote class="reviews__item slider__item">
             <p class="reviews__text">
@@ -112,61 +107,52 @@
             <button class="slider__toggle">2</button>
           </div>
         </div>
-
         <a class="main-button reviews__button "href="#">Написать</a>
       </article>
 
-      <div class="zigzag"></div>
-
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__table">
-          <tr>
-            <td class="contact__email">
+        <dl class="contacts__table">
+            <dt class="contact__email">
               <p>e-mail:</p>
-            </td>
-            <td class="contacts__email-item">
-              <a>info@mimimishkashop.ru</a>
-            </td>
-          </tr>
+            </dt>
+            <dd class="contacts__email-item">
+              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </dd>
 
-          <tr>
-            <td class="contacts__adress">
+            <dt class="contacts__adress">
               <p>адрес</p>
-            </td>
-            <td class="contacts__adress-item">
-              <p>г. Санкт-Петербург,<br>
-                  ул. Большая Конюшенная,<br>
+            </dt>
+            <dd class="contacts__adress-item">
+              <p>г. Санкт-Петербург,
+                  ул. Большая Конюшенная,
                   д. 19/8, офис 101
                 </p>
-            </td>
-          </tr>
-        </table>
+            </dd>
+        </dl>
+
         <div class="map"></div>
         <a class="main-button contacts__button" href="#">Напишите нам</a>
       </section>
     </main>
+
     <footer class="page-footer">
       <h2 class="visually-hidden">Подвал сайта</h2>
-      <div class="page-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item">
             <a href="#">Instagram</a>
           </li>
-          <li class="social__item">
+          <li class="social-list__item">
             <a href="#">Facebook</a>
           </li>
-          <li class="social__item">
+          <li class="social-list__item">
             <a href="#">Twitter</a>
           </li>
         </ul>
-      </div>
-
-      <div class="page-footer__copyright">
-        <p class="copyright__paragraph">Разработано</p>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="#">Разработано</a>
         <img class="copyright__image" src="" alt="Логотип HTML accademy">
       </div>
     </footer>
-
   </body>
 </html>
