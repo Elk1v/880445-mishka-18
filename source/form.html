@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__logo-image" src="" alt="Логотип Мишка">
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__hamburger">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог Товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пусто</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="form-main">
+      <h1 class="form-main__title">Вязание на заказ</h1>
+      <form class="form-main__page-form" method="POST" action="http://echo.htmlacademy.ru">
+        <p class="form-main__paragraph">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <div class="form-main__wrapper form-main__wrapper--type">
+          <h3 class="form-main__title form-main__title--type" >Тип</h3>
+          <input class="form-main__radio form-main__radio--accessory" type="radio" id="radio-one">
+          <label for="radio-one">Аксессуар для интерьера</label>
+          <input class="page-form__radio form-main__radio--toy" type="radio" id="radio-two">
+          <label for="radio-two">Детская игрушка</label>
+        </div>
+
+        <div class="form-main__wrapper form-main__wrapper--color">
+          <h3 class="form-main__title form-main_title--color">Цвет</h3>
+          <input class="form-main__checkbox" type="checkbox" id="checkbox-one">
+          <label for="checkbox-one">Белый</label>
+          <input class="form-main__checkbox" type="checkbox" id="checkbox-two">
+          <label for="checkbox-one">Серый</label>
+          <input class="form-main__checkbox" type="checkbox" id="checkbox-three">
+          <label for="checkbox-one">«Тиффани»</label>
+          <input class="form-main__checkbox" type="checkbox" id="checkbox-four">
+          <label for="checkbox-one">Черный</label>
+          <input class="form-main__checkbox" type="checkbox" id="checkbox-five">
+          <label for="checkbox-one">Розовый</label>
+          <input class="form-main__checkbox" type="checkbox" id="checkbox-six">
+          <label for="checkbox-one">Оранжевый</label>
+        </div>
+
+        <div class="form-main__wrapper form-main__wrapper--name">
+          <h3 class="form-main__title form-main__title--name"><abbr>ФИО</abbr></h3>
+          <label for="text--name">Имя:</label>
+          <input class="form-main__text" type="text" id="text-name" placeholder="Введите ваше имя*">
+          <label for="text-name">Фамилия:</label>
+          <input class="form-main__text" type="text" id="text-name" placeholder="Укажите фамилию*">
+          <label for="text-name">Отчество:</label>
+          <input class="form-main__text" type="text" id="text-name" placeholder="Отчество, если желаете">
+        </div>
+        <div class="form-main__wrapper form-main__wrapper--cellular">
+          <h3 class="form-main__title form-main__title--cellular">Тел</h3>
+          <input  class="form-main__text" type="text" id="text-cellular" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </div>
+
+        <div class="form-main__wrapper form-main__wrapper--email">
+          <h3 class="form-main__title form-main__title--cellular">e-mail</h3>
+          <input class="form-main__text" type="text" id="text-cellular" placeholder="Ваш Email*">
+        </div>
+
+        <div class="form-main__wrapper form-main__wrapper--extra">
+          <h3 class="form-mainm__title form-main__title--extra">Доп</h3>
+          <textarea class="form-main__textarea"   id="textarea-extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+
+        <small class="form-main__legend">
+          *Поля обязательны для заполнения
+        </small>
+
+        <button class="main-button form-main__button" type="submit">Отправить заказ</button>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Подвал сайта</h2>
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item">
+            <a href="#">Instagram</a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">Twitter</a>
+          </li>
+        </ul>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="#">Разработано</a>
+        <img class="copyright__image" src="" alt="Логотип HTML accademy">
+      </div>
+    </footer>
+  </body>
+</html>
