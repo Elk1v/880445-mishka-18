@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src=" " alt="Логотип Мишка">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
       </a>
 
       <nav class="main-nav">
@@ -32,25 +33,26 @@
     </header>
 
     <main class="catalog-main">
-
-      <h1 class="catalog-main__title">Каталог товаров</h1>
-
+      <h1 class="visually-hidden">Каталог наших товаров</h1>
+      <section class="catalog-main__heading">
+        <h2 class="catalog-main__heading-title">Каталог Товаров</h2>
+      </section
       <section class="card-list">
         <h2 class="visually-hidden">Карточки товаров</h2>
         <div class="card-list__item card-list__item--bunny">
-          <img class="card-list__image" src="https://via.placeholder.com/260x195" alt="Игрушка зайчик попрыгайчик">
+          <img class="card-list__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Игрушка зайчик попрыгайчик">
           <h3 class="card-list__title"><a href="#">Зайчик-попрыгайчик</a></h3>
           <p class="card-list__specific">Рост 30 см, вес 200 г</p>
           <b class="card-list__price">1 200 руб.</b>
         </div>
         <div class="card-list__item card-list__item--laundry-basket">
-          <img class="card-list__image" src="https://via.placeholder.com/260x195" alt="Корзинка для белья">
+          <img class="card-list__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
           <h3 class="card-list__title"><a href="#">Корзинка для белья</a></h3>
           <p class="card-list__specific">Диаметр 15 см, высота 10 см</p>
           <b class="card-list__price">690 руб.</b>
         </div>
         <div class="card-list__item card-list__item--toy-basket">
-          <img class="card-list__image" src="https://via.placeholder.com/260x195" alt="Корзинка для игрушек">
+          <img class="card-list__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Корзинка для игрушек">
           <h3 class="card-list__title"><a href="#">Большая корзинка для игрушек</a></h3>
           <p class="card-list__specific">Диаметр 30 см, высота 30 см</p>
           <b class="card-list__price">1 500 руб.</b>
@@ -61,7 +63,7 @@
         <h2 class="visually-hidden">Производство</h2>
         <div class="production__item production__item--process">
           <h3 class="production__title">Процесс производства</h3>
-          <img class="production__image" src="https://via.placeholder.com/260x150" alt="Фон будущего видео">
+          <img class="production__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Фон будущего видео">
           <p class="production__paragraph">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
@@ -72,20 +74,20 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Подвал сайта</h2>
-        <ul class="page-footer__list social-list">
-          <li class="social-list__item">
+        <ul class="page-footer__list">
+          <li class="page-footer__list-item">
             <a href="#">Instagram</a>
           </li>
-          <li class="social-list__item">
+          <li class="page-footer__list-item">
             <a href="#">Facebook</a>
           </li>
-          <li class="social-list__item">
+          <li class="page-footer__list-item">
             <a href="#">Twitter</a>
           </li>
         </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="#">Разработано</a>
-        <img class="copyright__image" src="#" alt="Логотип HTML accademy">
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="#">Разработано</a>
+        <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML accademy">
       </div>
     </footer>
   </body>

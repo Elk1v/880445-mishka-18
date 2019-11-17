@@ -1,0 +1,76 @@
+/*Импортирование блоков*/
+@import url("fonts.less");
+@import url("Header/page-header.less");
+@import url("Header/main-nav.less");
+@import url("Header/site-list.less");
+@import url("index-main-less/page-main.less");
+@import url("index-main-less/products.less");
+@import url("index-main-less/best-product.less");
+@import url("index-main-less/advantages-section.less");
+@import url("index-main-less/advantages-list.less");
+@import url("index-main-less/reviews.less");
+@import url("index-main-less/contacts.less");
+@import url("index-main-less/map.less");
+@import url("Footer/page-footer.less");
+/*Импортирование стилей Каталога*/
+@import url("catalog-main-less/catalog-main.less");
+@import url("catalog-main-less/card-list.less");
+@import url("catalog-main-less/production.less");
+
+
+
+
+
+
+
+
+
+
+/*Переменные*/
+@bg-color: #ffffff;
+
+
+body {
+  width: 320px;/*Врменнно*/
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, Arial, sans-serif;
+  background-color: @bg-color;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+.block {
+	box-sizing: content-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.mobile-wrapper {
+  margin-left: 30px;
+}

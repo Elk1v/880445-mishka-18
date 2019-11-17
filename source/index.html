@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="" alt="Логотип Мишка">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
       </a>
+      <button class="page-header__hamburger">Открыть меню</button>
 
       <nav class="main-nav">
-        <button class="main-nav__hamburger">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -38,8 +40,8 @@
       <section class="products">
         <h2 class="products__title">Милые штуки ручной работы</h2>
         <ul class="products__list">
-          <li class="products__list-item"><a href="#">Предметы интерьера</a></li>
-          <li class="products__list-item"><a href="#">Детские игрушки</a></li>
+          <li class="products__list-item products__list-item--interior"><a href="#">Предметы интерьера</a></li>
+          <li class="products__list-item products__list-item--toys"><a href="#">Детские игрушки</a></li>
         </ul>
 
       </section>
@@ -57,9 +59,9 @@
           <dt class="value-table__item">25 см</dt>
           <dt class="value-table__item">15 см</dt>
         </dl>
-        <div class="best-product__card best-card">
-          <img class="best-card__image" src="" alt="Фотография вязанных корзинок">
-          <p class="best-card__price">Цена: 990 руб.</p>
+        <div class="best-product__card ">
+          <img class="best-product__card-image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фотография вязанных корзинок">
+          <p class="best-product__card-price">Цена: 990 руб.</p>
         </div>
         <a href="#" class="main-button best-product__button">Заказать</a>
       </section>
@@ -67,7 +69,7 @@
       <section class="advantages-section">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="advantages-section__about">Коротко о нас:</p>
-        <ul class="advantages-section__list advantages-list">
+        <ul class="advantages-section__list">
           <li class="advantages-list__item advantages-list__item--eco">
             <p class="advantages-list__item-description">Экологически чистые материалы</p>
           </li>
@@ -110,7 +112,7 @@
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <dl class="contacts__table">
-            <dt class="contact__email">
+            <dt class="contacts__email">
               <span>e-mail:</span>
             </dt>
             <dd class="contacts__email-item">
@@ -134,20 +136,20 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Подвал сайта</h2>
-        <ul class="page-footer__list social-list">
-          <li class="social-list__item">
+        <ul class="page-footer__list">
+          <li class="page-footer__list-item">
             <a href="#">Instagram</a>
           </li>
-          <li class="social-list__item">
+          <li class="page-footer__list-item">
             <a href="#">Facebook</a>
           </li>
-          <li class="social-list__item">
+          <li class="page-footer__list-item">
             <a href="#">Twitter</a>
           </li>
         </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="#">Разработано</a>
-        <img class="copyright__image" src="" alt="Логотип HTML accademy">
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="#">Разработано</a>
+        <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML accademy">
       </div>
     </footer>
   </body>
