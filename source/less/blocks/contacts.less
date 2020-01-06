@@ -1,10 +1,11 @@
-@txt-color: #000000;
-@txt-small: #444444;
-
 .contacts {
+  width: 320px;
+  .container();
+  margin: 0 auto;
 }
 
-.contacts-title {
+.contacts__title {
+  padding: 0;
   color: @txt-color;
   text-align: left;
   font-size: 18px;
@@ -12,8 +13,17 @@
   line-height: 30px;
 }
 
+
+
+
+.contacts__email-table,
+.contacts__adress-table {
+  display: flex;
+}
+
 .contacts__email,
 .contacts__adress {
+  margin-right: 32px;
   color: @txt-small;
   text-align: left;
   font-size: 15px;
@@ -36,15 +46,18 @@
     }
 }
 
+
+
 .contacts__adress-item {
+  background-color: red;
   margin: 0;
   padding: 0;
   text-align: left;
   font-size: 15px;
   line-height: 30px;
 
-    p {
+    &-text{
+      max-width: 145px;
       margin: 0;
-      padding: 0;
     }
 }

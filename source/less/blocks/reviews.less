@@ -1,6 +1,8 @@
-@txt-color: #000000;
-
-.reviews {}
+.reviews {
+  width: 320px;
+  .container();
+  margin: 0 auto;
+}
 
 .reviews__title {
   color: @txt-color;
@@ -16,6 +18,7 @@
 }
 
 .reviews__text {
+  max-width: 260px;
   color: #444444;
   text-align: left;
   font-size: 15px;
@@ -23,6 +26,7 @@
 }
 
 .reviews__author-name {
+  display: block;
   color: @txt-color;
   text-align: left;
   font-size: 17px;

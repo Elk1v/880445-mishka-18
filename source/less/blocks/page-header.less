@@ -1,0 +1,40 @@
+.page-header {
+}
+
+.page-header__logo {
+  display: block;
+  width: 86px;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.page-header__logo-image {
+  display: block;
+  width: 86px;
+  height: 35px;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    position: relative;
+    height: 88px;
+    z-index: 1;
+  }
+  .page-header__logo {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1150px;
+  }
+}

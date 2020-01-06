@@ -10,25 +10,26 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
       </a>
-
-      <nav class="main-nav">
-        <button class="main-nav__hamburger">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+          <ul class="main-nav__list ">
+            <li class="main-nav__list-item">
               <a>Каталог Товаров</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__list-item">
               <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__list-item">
               <a href="#">Поиск по сайту</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__list-item">
               <a href="#">Корзина: пока пусто</a>
             </li>
           </ul>
         </div>
+        <button class="main-nav__hamburger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </header>
 
@@ -90,5 +91,6 @@
         <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML accademy">
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
