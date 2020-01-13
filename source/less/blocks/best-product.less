@@ -14,9 +14,9 @@
 
 .best-product__of-week {
   margin-bottom: 30px;
-
   color: #63d1bb;
-  text-align: left;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 17px;
   line-height: 20px;
 }
@@ -72,8 +72,9 @@
 .value-table {
 
   &__item{
+    width: 192px;
     padding-left: 31px;
-    padding-right: 27px;
+    /*padding-right: 27px;*/
   }
 }
 
@@ -81,9 +82,10 @@
 @media (min-width: @tablet-width) {
 
   .best-product {
-    width: 680px;
+    width: 772px;
     display: flex;
     flex-wrap: wrap;
+    .container();
   }
 
   .best-product__title {
@@ -102,6 +104,8 @@
     margin: 0;
     margin-top: 52px;
     margin-left: auto;
+
+    text-align: center;
   }
 
   .best-product__description {
@@ -147,8 +151,8 @@
   .best-product__button {
     order: 5;
     margin: 0;
-    margin-top: -70px;
-    margin-left: -290px;
+    margin-top: -50px;
+    margin-left: -260px;
   }
 
   .value-table {
