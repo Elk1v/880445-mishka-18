@@ -1,0 +1,53 @@
+.page-footer {
+  background-color: @footer-bg-color;
+}
+
+.page-footer__list {
+  height: 80px;/*временно*/
+  width: 260px;
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  .container();
+
+  list-style: none;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page-footer__list-item {}
+
+.page-footer__copyright {
+  display: flex;
+}
+
+.page-footer__copyright-link {
+  position: relative;
+
+  margin: auto;
+  padding-top: 28px;
+  padding-bottom: 31px;
+
+  color: @txt-color;
+  text-align: left;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 18px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+
+
+      width: 27px;
+      height: 34px;
+
+      background-color: red;
+    }
+}
+
+.page-footer__copyright {
+
+}

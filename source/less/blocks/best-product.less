@@ -1,0 +1,165 @@
+.best-product {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.best-product__title {
+  margin-bottom: 0;
+  color: @txt-color;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.best-product__of-week {
+  margin-bottom: 30px;
+  color: #63d1bb;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.best-product__description {
+  margin-bottom: 33px;
+  color: #444444;
+  text-align: left;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.best-product__table-wrapper {
+  display: flex;
+}
+
+.best-product__table {
+  margin: 0;
+  color: #444444;
+  text-align: left;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.best-product__table dt{
+  border-bottom: 1px solid #ececec;
+
+  &:not(first-child) {
+    padding-top: 5px;
+  }
+
+  &:not(last-child) {
+    padding-bottom: 5px;
+  }
+}
+
+.best-product__card {
+  margin-top: 30px;
+}
+
+.best-product__card-image {
+
+}
+
+.best-product__card-price {
+  color: #444444;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.value-table {
+
+  &__item{
+    width: 192px;
+    padding-left: 31px;
+    /*padding-right: 27px;*/
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+
+  .best-product {
+    width: 772px;
+    display: flex;
+    flex-wrap: wrap;
+    .container();
+  }
+
+  .best-product__title {
+    order: 1;
+    margin: 0;
+    margin-top: 43px;
+    margin-bottom: 55px;
+    font-size: 43px;
+    line-height: 50px;
+
+  }
+
+  .best-product__of-week {
+    order: 2;
+    max-width: 70px;
+    margin: 0;
+    margin-top: 52px;
+    margin-left: auto;
+
+    text-align: center;
+  }
+
+  .best-product__description {
+    max-width: 290px;
+    height: 80px;
+    margin: 0;
+    margin-top: -5px;
+
+    order: 3;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-product__table-wrapper {
+    height: 100px;
+    margin-top: -290px;
+    order: 5;
+  }
+
+  .best-product__card {
+    display: flex;
+    margin: 0;
+    margin-top: -75px;
+    margin-left: auto;
+    order: 4;
+
+      &-image {
+        order: 2;
+      }
+  }
+
+  .best-product__card-price {
+    align-self: flex-end;
+    order: 1;
+    margin: 0;
+    margin-bottom: 100px;
+    margin-right: 150px;
+
+    font-size: 20px;
+  }
+
+  .best-product__button {
+    order: 5;
+    margin: 0;
+    margin-top: -50px;
+    margin-left: -260px;
+  }
+
+  .value-table {
+
+    &__item{
+      padding-left: 31px;
+      padding-right: 57px;
+    }
+  }
+}
