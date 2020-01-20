@@ -42,7 +42,7 @@
     a {
       color: @txt-small;
       text-decoration: none;
-
+      border-bottom: 1px solid #63d1bb;
     }
 }
 
@@ -60,3 +60,49 @@
       max-width: 145px;
       margin: 0;
     }
+
+@media (min-width: @tablet-width){
+  .contacts{
+    width: 772px;
+  }
+  .contacts .main-button{
+  }
+
+  .contacts__title{
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__table-wrapper {
+    display: flex;
+  }
+
+  .contacts__email-table{}
+
+  .contacts__email{}
+
+  .contacts__adress-table{
+    margin-left: 55px;
+  }
+
+  .contacts__adress{}
+
+  .contacts__adress-item{}
+
+  .contacts__adress-item-text{
+    max-width: 220px;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .contacts{
+
+  }
+  .contacts__title{}
+  .contacts__email-table{}
+  .contacts__email{}
+  .contacts__adress-table{}
+  .contacts__adress{}
+  .contacts__adress-item{}
+  .contacts__adress-item-text{}
+}

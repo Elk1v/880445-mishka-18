@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-
   </head>
   <body>
     <header class="page-header">
@@ -122,25 +120,27 @@
 
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <dl class="contacts__email-table">
-            <dt class="contacts__email">
-              <span>e-mail:</span>
+        <div class="contacts__table-wrapper">
+          <dl class="contacts__email-table">
+              <dt class="contacts__email">
+                <span>e-mail:</span>
+              </dt>
+              <dd class="contacts__email-item">
+                <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </dd>
+            </dl>
+
+          <dl class="contacts__adress-table">
+            <dt class="contacts__adress">
+              <span>адрес:</span>
             </dt>
-            <dd class="contacts__email-item">
-              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </dd>
+            <dd class="contacts__adress-item">
+              <p class="contacts__adress-item-text">
+                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+                </p>
+              </dd>
           </dl>
-
-        <dl class="contacts__adress-table">
-          <dt class="contacts__adress">
-            <span>адресс</span>
-          </dt>
-          <dd class="contacts__adress-item">
-            <p class="contacts__adress-item-text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-              </p>
-            </dd>
-        </dl>
-
+        </div>
         <div class="map"></div>
         <a class="main-button main-button--contacts" href="#">Напишите нам</a>
       </section>

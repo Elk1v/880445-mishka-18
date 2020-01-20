@@ -1,5 +1,5 @@
 .main-button {
-  display: inline-block;
+  display: block;
   width: 260px;
   max-height: 52px;
   padding-top: 16px;
@@ -8,9 +8,9 @@
   color: #444444;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
   font-weight: bold;
   line-height: 20px;
-  vertical-align: middle;
 
   background-color: #ffffff;
   border: 2px solid #444444;
@@ -26,4 +26,28 @@
     &--contacts {
       font-size: 18px;
     }
+
+    &--production {
+
+      width: 192px;
+      margin: 0 auto;
+      margin-bottom: 33px;
+
+    }
+}
+
+@media (min-width: @tablet-width){
+  .main-button {
+
+    &--reviews {
+      width: 175px;
+    }
+  }
+
+  .main-button {
+    &--contacts{
+      width: 230px;
+      margin: 0 auto;
+    }
+  }
 }
