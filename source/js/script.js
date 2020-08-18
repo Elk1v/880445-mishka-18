@@ -2,7 +2,6 @@ var navMain = document.querySelector('.main-nav');
 var navHamburger = document.querySelector('.main-nav__hamburger');
 
 navMain.classList.remove('main-nav--nojs');
-
 navHamburger.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
